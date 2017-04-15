@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="RTD-VA-riN">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="NHr-Sx-8bY">
+            <objects>
+                <viewController id="RTD-VA-riN" customClass="ViewController" customModule="MBFacebookImagePicker_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KeO-H5-O7g"/>
+                        <viewControllerLayoutGuide type="bottom" id="dki-vO-Wpw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kzS-ZY-Y8F">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4G5-jC-8hy">
+                                <rect key="frame" x="25" y="626" width="364" height="60"/>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.18039215689999999" blue="0.33725490200000002" alpha="0.90000000000000002" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="364" id="2jm-hl-ftN"/>
+                                    <constraint firstAttribute="height" constant="60" id="nw7-Zd-Gof"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="Choose a photo">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="choosePhotoButtonPressed:" destination="RTD-VA-riN" eventType="touchUpInside" id="lzQ-Vh-Rb0"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder_image" translatesAutoresizingMaskIntoConstraints="NO" id="vcf-fy-Hsk">
+                                <rect key="frame" x="57" y="167.66666666666663" width="300" height="281"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="4G5-jC-8hy" secondAttribute="trailing" priority="750" constant="25" id="89c-0D-ULF"/>
+                            <constraint firstItem="vcf-fy-Hsk" firstAttribute="top" relation="greaterThanOrEqual" secondItem="KeO-H5-O7g" secondAttribute="bottom" constant="20" id="8er-T3-qeq"/>
+                            <constraint firstItem="vcf-fy-Hsk" firstAttribute="centerY" secondItem="kzS-ZY-Y8F" secondAttribute="centerY" constant="-60" id="9oL-GE-UqX"/>
+                            <constraint firstItem="vcf-fy-Hsk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kzS-ZY-Y8F" secondAttribute="leading" constant="20" id="AT1-d1-bXJ"/>
+                            <constraint firstItem="4G5-jC-8hy" firstAttribute="leading" secondItem="kzS-ZY-Y8F" secondAttribute="leading" priority="750" constant="25" id="HZQ-vg-QrQ"/>
+                            <constraint firstItem="vcf-fy-Hsk" firstAttribute="centerX" secondItem="kzS-ZY-Y8F" secondAttribute="centerX" id="WBS-xr-0Wa"/>
+                            <constraint firstItem="4G5-jC-8hy" firstAttribute="centerX" secondItem="kzS-ZY-Y8F" secondAttribute="centerX" id="l5P-cP-YPr"/>
+                            <constraint firstItem="dki-vO-Wpw" firstAttribute="top" secondItem="4G5-jC-8hy" secondAttribute="bottom" constant="50" id="lDU-zU-dLt"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vcf-fy-Hsk" secondAttribute="trailing" constant="20" id="sXS-t9-rrQ"/>
+                            <constraint firstItem="4G5-jC-8hy" firstAttribute="top" relation="greaterThanOrEqual" secondItem="vcf-fy-Hsk" secondAttribute="bottom" constant="20" id="yoz-1b-hZX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="choosePhotoButton" destination="4G5-jC-8hy" id="6Tj-MU-tsW"/>
+                        <outlet property="imageView" destination="vcf-fy-Hsk" id="6KM-Du-Jbv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Yr-Tp-tN6" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="placeholder_image" width="300" height="281"/>
+    </resources>
+</document>

@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  MBFacebookImagePicker
+
+  Copyright (c) 2017 mikaelbo. All rights reserved.
+*/
+
+"MBIMAGEPICKER_NO_ALBUMS_FOUND"     = "No albums found";
+"MBIMAGEPICKER_ALBUMS"              = "Albums";
+
+"MBIMAGEPICKER_ERROR_ALERT_TITLE"   = "Ooops...";
+"MBIMAGEPICKER_NETWORK_ERROR"       = "Network unavailable, please try again";
+"MBIMAGEPICKER_UNKNOWN_ERROR"       = "Something went wrong, please try again";
+
+"MBIMAGEPICKER_NO_PICTURES_FOUND"   = "Could not find any pictures\nin your photo album";
+
+"MBIMAGEPICKER_CANCEL"              = "Cancel";
+"MBIMAGEPICKER_OK"                  = "OK";
