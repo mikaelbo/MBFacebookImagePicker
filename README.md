@@ -14,6 +14,7 @@ A simple image picker for Facebook images written in Swift.
 * Swift 3 project 
 
 ## Installation
+
 ### CocoaPods
 
 Add the following line to your Podfile:
