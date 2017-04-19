@@ -127,6 +127,7 @@
 				607FACCE1AFB9204008FA782 /* Resources */,
 				3F553B96965C2A1964BDBBC5 /* [CP] Embed Pods Frameworks */,
 				8BB2DE6DBF7B1C153BA2AEDF /* [CP] Copy Pods Resources */,
+				7372C1E61EA7174F00C08F87 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -201,6 +202,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MBFacebookImagePicker_Example/Pods-MBFacebookImagePicker_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		7372C1E61EA7174F00C08F87 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
 		8BB2DE6DBF7B1C153BA2AEDF /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
