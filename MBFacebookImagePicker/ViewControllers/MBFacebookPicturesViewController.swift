@@ -223,9 +223,9 @@ class MBFacebookPicturesViewController: UIViewController, UICollectionViewDelega
         downloadFullImage(forUrl: picture.fullURL) { [weak self, weak overlayView, weak activityView] (image, error) in
             overlayView?.removeFromSuperview()
             activityView?.removeFromSuperview()
-            self?.navigationController.view.isUserInteractionEnabled = true
-            if let image = image {
-                imagePickerController?.finishedCompletion?(.completed(image))
+            self?.navigationController?.view.isUserInteractionEnabled = true
+            if let image = image, let imagePicker = self?.navigationController as? MBFacebookImagePickerController {
+                imagePicker.finishedCompletion?(.completed(image))
             } else {
                 self?.showAlert(withError: error)
             }
