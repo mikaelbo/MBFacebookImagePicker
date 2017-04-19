@@ -7,10 +7,10 @@
 
 import UIKit
 
-class MBFacebookImageURL : NSObject {
-    let url : URL
-    let imageSize : CGSize
-    
+class MBFacebookImageURL: NSObject {
+    let url: URL
+    let imageSize: CGSize
+
     init(url: URL, imageSize: CGSize) {
         self.url = url
         self.imageSize = imageSize
@@ -19,12 +19,12 @@ class MBFacebookImageURL : NSObject {
 }
 
 class MBFacebookPicture: NSObject {
-    let thumbURL : URL
+    let thumbURL: URL
     let fullURL: URL
-    let albumId : String
-    let uid : String?
-    let sourceImages : [MBFacebookImageURL]
-    
+    let albumId: String
+    let uid: String?
+    let sourceImages: [MBFacebookImageURL]
+
     init(thumbURL: URL, fullURL: URL, albumId: String, uid: String?, sourceImages: [MBFacebookImageURL]) {
         self.thumbURL = thumbURL
         self.fullURL = fullURL
@@ -33,21 +33,22 @@ class MBFacebookPicture: NSObject {
         self.sourceImages = sourceImages
         super.init()
     }
-    
+
     func bestURLForSize(size: CGSize) -> URL {
         guard var bestImageURL = sourceImages.first else {
             return self.thumbURL
         }
-        
+
         for imageURL in sourceImages {
             let currentFoundSize = bestImageURL.imageSize
             let sizeIsAcceptable = imageURL.imageSize.width >= size.width && imageURL.imageSize.height >= size.height
-            let sizeIsSmallerThanCurrentImage = imageURL.imageSize.width * imageURL.imageSize.height < currentFoundSize.width * currentFoundSize.height
-            if sizeIsAcceptable && sizeIsSmallerThanCurrentImage {
+            let imageTotal = imageURL.imageSize.width * imageURL.imageSize.height
+            let currentImageTotal = currentFoundSize.width * currentFoundSize.height
+            if sizeIsAcceptable && imageTotal < currentImageTotal {
                 bestImageURL = imageURL
             }
         }
-        
+
         return bestImageURL.url
     }
 }

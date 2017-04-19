@@ -8,19 +8,19 @@
 import UIKit
 
 class MBFacebookPickerEmptyView: UIView {
-    
+
     let titleLabel = UILabel()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
         configureLabel()
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         configureLabel()
     }
-    
+
     fileprivate func configureLabel() {
         titleLabel.numberOfLines = 2
         let wantedSize = CGSize(width: 205, height: 40)
@@ -31,7 +31,10 @@ class MBFacebookPickerEmptyView: UIView {
                                   height: wantedSize.height)
         titleLabel.font = UIFont.systemFont(ofSize: 15)
         titleLabel.textColor = UIColor(red: 85 / 255, green: 85 / 255, blue: 85 / 255, alpha: 0.5)
-        titleLabel.autoresizingMask = [.flexibleTopMargin, .flexibleBottomMargin, .flexibleLeftMargin, .flexibleRightMargin]
+        titleLabel.autoresizingMask = [.flexibleTopMargin,
+                                       .flexibleBottomMargin,
+                                       .flexibleLeftMargin,
+                                       .flexibleRightMargin]
         addSubview(titleLabel)
     }
 }
