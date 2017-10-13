@@ -93,7 +93,7 @@ class MBFacebookPicturesViewController: UIViewController, UICollectionViewDelega
         }, completion: nil)
     }
 
-    func cancelButtonPressed() {
+    @objc func cancelButtonPressed() {
         guard let picker = self.navigationController as? MBFacebookImagePickerController else { return }
         picker.finishedCompletion?(.cancelled)
     }

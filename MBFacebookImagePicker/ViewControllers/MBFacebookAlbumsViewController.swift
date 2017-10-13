@@ -65,7 +65,7 @@ class MBFacebookAlbumsViewController: UIViewController, UITableViewDelegate, UIT
         view.addSubview(tableView)
     }
 
-    func cancelButtonPressed() {
+    @objc func cancelButtonPressed() {
         if let picker = self.navigationController as? MBFacebookImagePickerController {
             picker.finishedCompletion?(.cancelled)
         }
