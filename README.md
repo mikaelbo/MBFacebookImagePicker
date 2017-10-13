@@ -2,7 +2,6 @@
 
 [![Version](https://img.shields.io/cocoapods/v/MBFacebookImagePicker.svg?style=flat)](http://cocoapods.org/pods/MBFacebookImagePicker)
 [![Platform](https://img.shields.io/cocoapods/p/MBFacebookImagePicker.svg?style=flat)](http://cocoapods.org/pods/MBFacebookImagePicker)
-![Swift version](https://camo.githubusercontent.com/23d2710256d8ec9a005675b6c655c13f2188dc95/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f253230696e2d7377696674253230332e302d6f72616e67652e737667)
 [![License](https://img.shields.io/cocoapods/l/MBFacebookImagePicker.svg?style=flat)](http://cocoapods.org/pods/MBFacebookImagePicker)
 
 A simple image picker for Facebook written in Swift. Looks and works very similar to the native UIImagePickerController, except it uses a completion block instead of a delegate protocol.
@@ -12,7 +11,7 @@ A simple image picker for Facebook written in Swift. Looks and works very simila
 * Xcode 8
 * iOS 8.0+ target deployment
 * FBSDKCoreKit, FBSDKLoginKit (>= 4.0)
-* Swift 3 project 
+* Swift 4 project 
 
 ## Installation
 
