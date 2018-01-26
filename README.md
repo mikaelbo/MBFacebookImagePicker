@@ -8,7 +8,7 @@ A simple image picker for Facebook written in Swift. Looks and works very simila
 
 ## Requirements
 
-* Xcode 8
+* Xcode 9
 * iOS 8.0+ target deployment
 * FBSDKCoreKit, FBSDKLoginKit (>= 4.0)
 * Swift 4 project 
