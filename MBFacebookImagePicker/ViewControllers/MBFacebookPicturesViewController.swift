@@ -18,7 +18,7 @@ class MBFacebookPicturesViewController: UIViewController, UICollectionViewDelega
     fileprivate var usecase: MBFacebookPicturesUsecase?
     fileprivate var pictures = [MBFacebookPicture]()
 
-    fileprivate let spinner = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+    fileprivate let spinner = UIActivityIndicatorView(style: .gray)
 
     fileprivate lazy var emptyView: MBFacebookPickerEmptyView = {
         let emptyView = MBFacebookPickerEmptyView(frame: self.view.bounds)
@@ -58,7 +58,7 @@ class MBFacebookPicturesViewController: UIViewController, UICollectionViewDelega
         collectionView.alwaysBounceVertical = true
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         collectionView.register(UICollectionReusableView.classForCoder(),
-                                forSupplementaryViewOfKind: UICollectionElementKindSectionFooter,
+                                forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter,
                                 withReuseIdentifier: footerIdentifier)
         view.addSubview(collectionView)
     }
@@ -117,7 +117,7 @@ class MBFacebookPicturesViewController: UIViewController, UICollectionViewDelega
     func collectionView(_ collectionView: UICollectionView,
                         viewForSupplementaryElementOfKind kind: String,
                         at indexPath: IndexPath) -> UICollectionReusableView {
-        if kind == UICollectionElementKindSectionFooter {
+        if kind == UICollectionView.elementKindSectionFooter {
             let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
                                                                              withReuseIdentifier: footerIdentifier,
                                                                              for: indexPath)
@@ -207,7 +207,7 @@ class MBFacebookPicturesViewController: UIViewController, UICollectionViewDelega
 
         imagePickerController.view.isUserInteractionEnabled = false
 
-        let activityView = UIActivityIndicatorView(activityIndicatorStyle: .white)
+        let activityView = UIActivityIndicatorView(style: .white)
         activityView.center = cell.contentView.center
         activityView.color = UIColor.white
         activityView.autoresizingMask = fullResizingMask()
@@ -287,7 +287,7 @@ class MBFacebookPicturesViewController: UIViewController, UICollectionViewDelega
         return visibleContentBottom > lastPageTop
     }
 
-    func fullResizingMask() -> UIViewAutoresizing {
+    func fullResizingMask() -> UIView.AutoresizingMask {
         return [.flexibleTopMargin, .flexibleBottomMargin, .flexibleLeftMargin, .flexibleRightMargin]
     }
 

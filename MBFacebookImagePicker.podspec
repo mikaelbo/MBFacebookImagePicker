@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MBFacebookImagePicker'
-  s.version          = '1.0.4'
+  s.version          = '1.0.5'
   s.summary          = 'A simple image picker for Facebook written in Swift.'
 
   s.homepage         = 'https://github.com/mikaelbo/MBFacebookImagePicker'
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'MBFacebookImagePicker/**/*'
   
-  s.dependency 'FBSDKCoreKit', '~> 4.21.0'
-  s.dependency 'FBSDKLoginKit', '~> 4.21.0'
+  s.dependency 'FBSDKCoreKit', '~> 4.41.2'
+  s.dependency 'FBSDKLoginKit', '~> 4.41.2'
 
 end

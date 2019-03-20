@@ -16,7 +16,7 @@ class MBFacebookAlbumsViewController: UIViewController, UITableViewDelegate, UIT
     fileprivate var albums = [MBFacebookAlbum]()
 
     fileprivate let loadingFooter = UIView()
-    fileprivate let spinner = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+    fileprivate let spinner = UIActivityIndicatorView(style: .gray)
     fileprivate lazy var emptyView: MBFacebookPickerEmptyView = {
         let emptyView = MBFacebookPickerEmptyView(frame: self.view.bounds)
         emptyView.autoresizingMask = [.flexibleWidth, .flexibleHeight]

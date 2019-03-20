@@ -55,7 +55,7 @@ public class MBFacebookImagePickerController: UINavigationController {
         super.viewDidLoad()
         navigationBar.barTintColor = UIColor(red: 0.129995, green: 0.273324, blue: 0.549711, alpha: 1)
         navigationBar.tintColor = UIColor.white
-        navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
     }
 
     public override var preferredStatusBarStyle: UIStatusBarStyle {

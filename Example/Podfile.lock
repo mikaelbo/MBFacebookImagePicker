@@ -1,17 +1,17 @@
 PODS:
-  - Bolts (1.8.4):
-    - Bolts/AppLinks (= 1.8.4)
-    - Bolts/Tasks (= 1.8.4)
-  - Bolts/AppLinks (1.8.4):
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
     - Bolts/Tasks
-  - Bolts/Tasks (1.8.4)
-  - FBSDKCoreKit (4.21.0):
-    - Bolts (~> 1.7)
-  - FBSDKLoginKit (4.21.0):
+  - Bolts/Tasks (1.9.0)
+  - FBSDKCoreKit (4.41.2):
+    - Bolts (~> 1.9)
+  - FBSDKLoginKit (4.41.2):
     - FBSDKCoreKit
-  - MBFacebookImagePicker (1.0.2):
-    - FBSDKCoreKit (~> 4.21.0)
-    - FBSDKLoginKit (~> 4.21.0)
+  - MBFacebookImagePicker (1.0.4):
+    - FBSDKCoreKit (~> 4.41.2)
+    - FBSDKLoginKit (~> 4.41.2)
 
 DEPENDENCIES:
   - MBFacebookImagePicker (from `../`)
@@ -21,11 +21,11 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
-  FBSDKCoreKit: 8a372ab194b5c7c26355c1920ef52dbeb44bc222
-  FBSDKLoginKit: a1a5f4b4ac445823a020fbeeaf5f03714a67ff9c
-  MBFacebookImagePicker: 01691a2a662855513529943b41126da7a8c213df
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  FBSDKCoreKit: 559246ca24848bf7254695476df425b88651dcb3
+  FBSDKLoginKit: 48f1758be0779ac5d2ef1b50ddfa75f8ad683180
+  MBFacebookImagePicker: b758e497577c0d6e057d3e095379b00c625f2083
 
 PODFILE CHECKSUM: daf5073b174a2ba32dbad89c8fe38c40b85c86b8
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.4.0
